@@ -118,7 +118,7 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("../assets/console1.png");
+    background-image: url("../assets/consolee.png");
     background-position:center top;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -139,13 +139,15 @@ body{
 #btn-execute{
     display: inline-block;
     /*position: relative;*/
-    margin-top: 2%;
-    margin-left: 68.6%;
-    top: -0.3%;
-    width: 27.5%;
-    height: 40px;
+    /*margin-top: 2%;*/
+    /*margin-left: 68.6%;*/
+    /*top: -0.3%;*/
+    width: 100%;
+    height: 100%;
+    background-color: #39e539;
+    /*height: 40px;*/
     text-decoration: none;
-    font: 20px "Jokerman", Helvetica, Arial, sans-serif;
+    font: 20px "Arial";
     font-weight: bold;
     line-height: 40px;
     text-align: center;
@@ -160,7 +162,7 @@ body{
     width: 18.3%;
     height: 30%;
     text-decoration: none;
-    font: 20px "Jokerman", Helvetica, Arial, sans-serif;
+    font: 20px "Arial";
     font-weight: bold;
     line-height: 40px;
     text-align: center;
@@ -170,7 +172,7 @@ body{
 
 .controls,
 .controls:hover {
-    color: #555;
+    color: #000000;
     border: 4px solid #989695;
     background: #39e539;
 }
@@ -189,18 +191,48 @@ body{
 }
 
 #exitArena {
-    display: inline-block;
-    /*position: relative;*/
-    margin-top: 0.5%;
-    margin-left: 36%;
-    top: -0.3%;
-    width: 27.5%;
-    height: 40px;
-    text-decoration: none;
-    font: 20px "Jokerman", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    line-height: 40px;
-    text-align: center;
+    display: block;
+    width:100%;
+    height:100%;
+    background-image: url("../assets/16225298-exit-icon.png");
+    background-position:center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#rating {
+    display: block;
+    width:100%;
+    height:100%;
+    background-image: url("../assets/rating.png");
+    background-position:center center;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+}
+
+#profile_icon {
+    display: block;
+    width:100%;
+    height:100%;
+    background-image: url("../assets/profilepng.png");
+    background-position:center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+#menuuu {
+    display: block;
+    width:100%;
+    height:100%;
+    background-image: url("../assets/top_menu.png");
+    background-position:center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 /*=================================*/
@@ -245,7 +277,7 @@ body {font: 18px Verdana sans-serif;}
 
     grid-template-columns: 2fr 1.25fr;
 
-    grid-template-rows: 70px 750px 120px;
+    grid-template-rows: 70px 750px 160px;
     /*grid-template-rows: auto [header-bottom  main-top] 1fr [main-bottom];*/
 
     grid-template-areas: "banner    banner"
@@ -272,6 +304,8 @@ body {font: 18px Verdana sans-serif;}
 .grid > :nth-child(3) {
     background-color: #CCF;
 
+
+
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -289,3 +323,89 @@ body {font: 18px Verdana sans-serif;}
     grid-row-end: 4;  /* то же, что 3 */
     /* колонка не задана, поэтому берется первая свободная */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid_low_menu {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    /*margin-left: 0.5%;*/
+    /*margin-right: 2%;*/
+    margin-top: 0.8%;
+    grid-gap: 0.2vw;
+
+    grid-template-columns: 25% 15% 20% 37% ;
+
+    /*grid-template-columns: 1400px 643px;*/
+    grid-template-rows: 50px 80px;
+    /*grid-template-rows: auto [header-bottom  main-top] 1fr [main-bottom];*/
+}
+
+.grid_low_menu > :nth-child(1) {
+    background-color: rgba(238, 238, 238, 0);
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 1;  /* то же, что 2 */
+    grid-row-end: 2;  /* то же, что 3 */
+    /* колонка не задана, поэтому берется первая свободная */
+}
+
+
+
+.grid_low_menu > :nth-child(2) {
+    background-color: rgba(204, 204, 255, 0);
+
+    margin-top: 4%;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.grid_low_menu > :nth-child(3) {
+    background-color: rgba(204, 204, 255, 0);
+
+    margin-top: 4%;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid_low_menu > :nth-child(4) {
+    background-color: rgba(204, 204, 255, 0);
+
+    margin-top: 4%;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
