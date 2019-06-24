@@ -12,9 +12,9 @@ Img.bullet.src = '../assets/bullet.png';
 
 Img.map = {};
 Img.map['level_1'] = new Image();
-Img.map['level_1'].src = '../assets/level_backgrounds/map.png';
+Img.map['level_1'].src = '../assets/level_backgrounds/map2.png';
 Img.map['level_1'] = new Image();
-Img.map['level_1'].src = '../assets/level_backgrounds/map.png';
+Img.map['level_1'].src = '../assets/level_backgrounds/map2.png';
 
 let socket = io();
 let toolTipElem = document.getElementById("game");
@@ -188,11 +188,9 @@ let drawMap = function(){
     ctx.drawImage(Img.map[player.map],x,y);
 };
 
+let scoreCounter = document.getElementById('crystalCounter');
 let drawScore = function(){
-    ctx.fillStyle = 'White';
-    ctx.fillText("Kills:",15,60);
-    drawKills();
-    ctx.fillText(Player.list[selfId].score,85,60);
+    scoreCounter.innerText = Player.list[selfId].score;
 };
 
 let drawKills = function () {
