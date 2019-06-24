@@ -5,7 +5,6 @@
     <title>Title</title>
     <link rel="stylesheet" href="/stylesheets/level_1_test.css">
     <script src="socket.io-client/dist/socket.io.js"></script>
-    <script src="/src/CompilePlayerCode.js"></script>
 </head>
 <body>
 <div id="grid">
@@ -44,7 +43,6 @@
             </div>
 
             <div id="tips">
-                <textarea id="tipsTextarea" readonly></textarea>
                 <div id="label_tips_task" onclick="Run()">TASK AND TIPS</div>
             </div>
 
@@ -53,8 +51,7 @@
         </div>
     </div>
 </div>
-<div id="tooltip" class="tooltip">
-    <textarea id="tooltipText" class="tooltip"></textarea>
+<div class="tooltip">
     <div id="btn_tooltip_n" class="tooltip btnTooltip controls">NEXT</div>
     <div id="btn_tooltip_p" class="tooltip btnTooltip controls">BACK</div>
 </div>
@@ -65,8 +62,9 @@
 </script>
 </body>
 <script src="/src/maps.js"></script>
-<!--<script src="/src/tooltips.js"></script>-->
 <script src="/src/gameSingle.js"></script>
 <script src="/src/maps.js"></script>
+<script src="/src/tooltips.js"></script>
+<script src="/src/CompilePlayerCode.js"></script>
 <script src="/src/timer.js"></script>
 </html>

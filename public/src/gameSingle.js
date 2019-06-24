@@ -34,29 +34,62 @@ let jumpObjects = [];
 let crystals = [];
 let doors = [];
 let tooltipText = [];
-tooltipText[0] = '«Вітаємо тебе в дивовижному світі тролів в якому ти зможеш відкрити для себе щось нове і не відоме.' +
+tooltipText[0] = '  Вітаємо тебе в дивовижному світі тролів в якому ти зможеш відкрити для себе щось нове і не відоме.' +
                     'Тобі доведеться спочатку прочитати теорію, щоб зрозуміти що робити.»';
 
-tooltipText[1] = '<p>«JavaScript спочатку створювався для того, щоб зробити web-сторінки «живими». Програми на цій мові називаються скриптами. ' +
+tooltipText[1] = '  JavaScript спочатку створювався для того, щоб зробити web-сторінки «живими». Програми на цій мові називаються скриптами. ' +
                         'У браузері вони підключаються безпосередньо до HTML і, як тільки завантажується сторінка - тут же виконуються. ' +
                         'Компіляція - це коли вихідний код програми, за допомогою спеціального інструменту, іншої програми, яка називається «компілятор», ' +
                         'перетворюється в іншу мову, як правило - в машинний код. Цей машинний код потім поширюється і запускається. ' +
-                        'При цьому вихідний код програми залишається у розробника.»</p>';
+                        'При цьому вихідний код програми залишається у розробника.»';
 
-tooltipText[2] = "<p>«Тег script містить виконуваний код. Попередні стандарти HTML вимагали обовязкового зазначення атрибута type, але зараз він вже не потрібен. Досить просто '<'script'>'" +
+tooltipText[2] = "  Тег script містить виконуваний код. Попередні стандарти HTML вимагали обовязкового зазначення атрибута type, але зараз він вже не потрібен. Досить просто '<'script'>'" +
                         "Браузер, коли бачить '<'script'>':" +
                         "1. Починає відображати сторінку, показує частину документа до script" +
-                        "2. Зустрівши тег script, перемикається в JavaScript-режим і не показує, а виконує його вміст.</p>";
+                        "2. Зустрівши тег script, перемикається в JavaScript-режим і не показує, а виконує його вміст." +
+                        "3. Після завершення виконання, повертається назад в HTML-режим і тільки тоді відображає частину документа.\n" +
+                        "Спробуйте цей приклад в дії, і ви самі все побачите.»\n";
 
+tooltipText[3] = "  Вітаю, ти виконав завдання. А тепер трохи складніше. \n" +
+                "Спробуй управляти персонажем. Для цього треба зрозуміти що таке функція та її параметри.\n" +
+                "Наприклад: player.moveRight(10). В даному випадку player це клас твого персонажа. Він містить в собі здібності твого троля. Тобто там зберігаються функції переміщення вліво, вправо, вверх, донизу, стрибок та собрати кристал.\n" +
+                "А moveRight(10) це функція яка переміщує твого персонажа вправо на 10 кроків. Напиши цей код в консоль та подивись що вийде.\n";
+
+tooltipText[4] = 'Вітаю, ти виконав завдання. А тепер трохи складніше.Спробуй управляти персонажем. Для цього треба зрозуміти що таке функція та її параметри. Наприклад: player.moveRight(10) В даному випадку player це клас твого персонажа. Він містить в собі здібності твого троля. Тобто там зберігаються функції переміщення вліво, вправо, вверх, донизу, стрибок та собрати кристал. А moveRight(10) це функція яка переміщує твого персонажа вправо на 10 кроків. Напиши цей код в консоль та подивись що вийде.';
+tooltipText[5] = 'Тепер тобі потрібно добратися до кристалу за допомогою команд:\n' +
+    '−\tplayer.moveRight()\n' +
+    '−\tplayer.moveLeft()\n' +
+    '−\tplayer.moveUp()\n' +
+    '−\tplayer.moveDown()\n' +
+    'Щойно ти доберешься до кристалу, напишу команду player.takeCristal()\n' +
+    ' та кристал збереться.\n';
+tooltipText[6] = 'Вітаю! Ти знайшов кристал. Тепер тобі потрібно зібрати усі кристали рівня, щоб мати змогу відгадати секретний шифр двері та покинити рівень.';
+tooltipText[7] = 'Вітаю. Ти зібрав усі кристали. Тепер напиши функцію відкриття двері. player.openDoor()';
+tooltipText[8] = 'Ха-ха. Думав так легко піти? Тепер тобі треба вирішити маленьку задачу на програмування щоб двері відкрились.\n' +
+    'Є методи і у чисел, наприклад num.toFixed (n). Він округлює число num до n знаків після коми, при необхідності добиває нулями до даної довжини і повертає у вигляді рядка (зручно для форматованого виведення). Напиши код щоб округлити числа.\n';
+tooltipText[9] = 'Добре я тобі допомогу. Тобі треба написати:\n' +
+    'var n=12.345;\n' +
+    'alert( n.toFixed(2));\n' +
+    'alert( n.toFixed(0));\n' +
+    'alert( n.toFixed(5));\n';
+tooltipText[10] = 'Добре ти знайшов секретний код:\n' +
+    '1.\t12.35\n' +
+    '2.\t12\n' +
+    '3.\t12.34500\n' +
+    'Вітаю! До зустрічі на наступному рівні\n';
 let score = document.getElementById("crystalCounter");
+let Showed = 0;
 let showingTooltip = 0;
+let firstTaskDone = false;
+let secondTaskDone = false;
+let thirdTaskDone= false;
 
 
 //Выполняет команды из консоли
-function Run () {
-    let script = document.getElementById("code").value;
-    eval(script);
-}
+// function Run () {
+//     let script = document.getElementById("code").value;
+//     eval(script);
+// }
 
 //не используется
 testCollisionRectRect = function(rect1,rect2){
@@ -535,12 +568,12 @@ let GameObject = function(x, y, width, height, relativeX, relativeY){
     return self;
 };
 
-gameObjects[0] = new GameObject(1310, 970, 460, 330, 420, 410);
-gameObjects[1] = new GameObject(1830, 970, 460, 240, 400, 500);
-gameObjects[2] = new GameObject(2410, 690, 660, 710, 300, 30);
-gameObjects[3] = new GameObject(2990, 970, 460, 330, 400, 410);
-gameObjects[4] = new GameObject(3860, 780, 1220, 680, 10, 100);
-gameObjects[5] = new  GameObject(5540, 970, 880, 240, 170, 500);
+gameObjects[0] = new GameObject(1310, 910, 460, 330, 420, 410);
+gameObjects[1] = new GameObject(1830, 910, 460, 240, 400, 500);
+gameObjects[2] = new GameObject(2410, 640, 660, 710, 300, 30);
+gameObjects[3] = new GameObject(2990, 920, 460, 330, 400, 410);
+gameObjects[4] = new GameObject(3860, 730, 1220, 680, 10, 100);
+gameObjects[5] = new  GameObject(5540, 940, 880, 240, 170, 500);
 
 //chest 750x1050
 //sofa 1330x970
@@ -572,10 +605,10 @@ let Crystal = function(x, y, width, height, relativeX, relativeY, img){
     return self;
 };
 
-crystals[0] = new Crystal(1940, 800, 100, 130, 490, 380, Img.crystal['colorful']);
-crystals[1] = new Crystal(3320, 450, 100, 100, 510, 70, Img.crystal['blue']);
-crystals[2] = new Crystal(4370, 450, 100, 100, 510, 70, Img.crystal['green']);
-crystals[3] = new Crystal(6900, 900, 200, 350, 480, 470, Img.crystal['red-black']);
+crystals[0] = new Crystal(1945, 845, 100, 130, 490, 380, Img.crystal['colorful']);
+crystals[1] = new Crystal(3320, 490, 100, 100, 510, 70, Img.crystal['blue']);
+crystals[2] = new Crystal(4370, 490, 100, 100, 510, 70, Img.crystal['green']);
+crystals[3] = new Crystal(6900, 940, 200, 350, 480, 470, Img.crystal['red-black']);
 
 Maps = function(id,imgSrc,grid){
     let self = {
@@ -646,12 +679,116 @@ let drawScore = function () {
     score.innerText = player.score;
 };
 
-let Showed = 0;
-showTooltip(tooltipText[Showed]);
+let runFirstTask = function(){
+    hideTooltip();
+    let text = "<script> alert('Hello. You are a new Troll') </script>";
+    document.getElementById('tipsTextarea').value = 'Виконай цей код\n' + text;
+    document.getElementById('btn-execute').addEventListener('click', function(e){
+        let script = document.getElementById("code").value;
+        if (script === text){
+            alert('Hello. You are a new Troll');
+            document.getElementById('btn-execute').onclick = Run;
+            firstTaskDone = true;
+            Showed++;
+            showTooltip(tooltipText[Showed]);
+        }
+    });
+};
+
+let runSecondTask = function(){
+    hideTooltip();
+    let text =
+        "player.moveRight(10);";
+    document.getElementById('tipsTextarea').value = 'Виконай цей код\n' + text;
+    document.getElementById('btn-execute').addEventListener('click', function(e){
+        let script = document.getElementById("code").value;
+        if (script === text){
+            alert('Система опрацювала написаний код користувачем. Персонаж пройшов вправо 10 кроків.');
+            player.moveRight(10);
+            document.getElementById('btn-execute').onclick = Run;
+            secondTaskDone = true;
+            Showed++;
+            showTooltip(tooltipText[Showed]);
+        }
+    });
+};
+
+let runThirdTask = function(){
+    hideTooltip();
+    let text = '−\tplayer.moveRight()\n' +
+        '−\tplayer.moveLeft()\n' +
+        '−\tplayer.moveUp()\n' +
+        '−\tplayer.moveDown()\n' +
+        'Щойно ти доберешься до кристалу, напишу команду player.takeCristal();';
+    document.getElementById('tipsTextarea').value = 'Виконай цей код\n' + text;
+    document.getElementById('btn-execute').addEventListener('click', function(e){
+        let script = document.getElementById("code").value;
+        if (player.score > 0){
+            alert('Вітаю! Ти знайшов кристал. Тепер тобі потрібно зібрати усі кристали рівня, ' +
+                'щоб мати змогу відгадати секретний шифр двері та покинити рівень.');
+            document.getElementById('btn-execute').onclick = Run;
+            thirdTaskDone = true;
+            Showed++;
+            showTooltip(tooltipText[Showed]);
+        }
+    });
+};
+
+let showTooltip = function (text) {
+    document.getElementById('tooltip').style.display = 'inline-block';
+    let tooltip = document.getElementById('tooltipText');
+    tooltip.value = text;
+};
+
+let hideTooltip = function(){
+    document.getElementById('tooltip').style.display = 'none';
+};
+
+document.getElementById('btn_tooltip_p').onclick = function (e) {
+    Showed--;
+    if (Showed <= 0) {
+        hideTooltip();
+    } else {
+        showTooltip(tooltipText[Showed]);
+    }
+};
+
 
 document.getElementById('btn_tooltip_n').onclick = function (e) {
-    Showed+=1;
-    showTooltip(tooltipText[Showed]);
+    switch (Showed){
+        case 5:
+            if(!thirdTaskDone) {
+                runThirdTask();
+            }
+            break;
+        case 4:
+            if(!secondTaskDone) {
+                runSecondTask();
+            }
+            break;
+        case 3:
+            if (!firstTaskDone) {
+                hideTooltip();
+                runFirstTask();
+            }
+            break;
+        default:
+            if(Showed < 3) {
+                showTooltip(tooltipText[Showed]);
+                Showed++;
+            }
+    }
+    //     runSecondTask();
+    // } else
+    // if (Showed === 4){
+    //     runSecondTask();
+    // } else if(Showed === 3){
+    //     hideTooltip();
+    //     runFirstTask();
+    // } else {
+    //     showTooltip(tooltipText[Showed]);
+    //     Showed++;
+    // }
 };
 
 document.onkeydown = function(event){
@@ -667,4 +804,5 @@ document.onkeydown = function(event){
 
 document.getElementById('game').onclick = function(e) {
     console.log("player: ", player.x, player.y);
+    console.log(crystals[0].rightBumper, crystals[0].upBumper);
 };
