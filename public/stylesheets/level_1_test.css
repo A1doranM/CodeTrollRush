@@ -102,9 +102,14 @@ body{
     background-color: transparent;
     display: inline-block;
     margin-top: 1.6%;
-    margin-left: 1.4%;
+    margin-left: 2%;
     width: 77%;
     height: 71%;
+
+
+    text-decoration: none;
+    font: 25px "Arial";
+    /*font-weight: bold;*/
 }
 
 #label_tips_task{
@@ -116,7 +121,8 @@ body{
     width: 19%;
     height: 70%;
     text-decoration: none;
-    font: 30px "Arial";
+    font: 28px "Arial";
+    font-weight: bold;
     line-height: 120px;
     text-align: center;
     border: 4px solid #989695;
@@ -170,7 +176,7 @@ body{
     width: 27.5%;
     height: 40px;
     text-decoration: none;
-    font: 20px "Jokerman", Helvetica, Arial, sans-serif;
+    font: 30px "Arial";
     font-weight: bold;
     line-height: 40px;
     text-align: center;
@@ -197,13 +203,56 @@ body{
     height:100%;
 }
 
+
+
+
+
+
+
+#Crystalsfrom{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 3.5%;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+
+#Yourtime{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 7%;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*=================================*/
 /*           Tooltips              */
 /*=================================*/
 
 #tooltipText{
-    height: 530px;
+    height: 380px;
     overflow: hidden;
+    text-decoration: none;
+    font: 28px "Arial";
+
+
 }
 
 .tooltip {
@@ -212,7 +261,7 @@ body{
     top: 15%;
     left: 8%;
     width: 1100px;
-    height: 600px;
+    height: 450px;
     /* подсказка должна перекрывать другие элементы */
 
     padding: 10px 20px;
@@ -238,7 +287,7 @@ body{
     /* красивости... */
     width: 100px;
     height: 30px;
-    margin-top: 560px;
+    margin-top: 410px;
     margin-left: 990px;
 
     border: 1px solid #b3c9ce;
@@ -248,14 +297,14 @@ body{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 
     text-decoration: none;
-    font: 20px "Jokerman", Helvetica, Arial, sans-serif;
+    font: 30px "Arial";
     font-weight: bold;
-    line-height: 35px;
+    line-height: 30px;
     text-align: center;
 }
 
 #btn_tooltip_p{
-    margin-left: 830px;
+    margin-left: 8px;
 }
 /*=================================*/
 /*          GRID            */
@@ -340,7 +389,10 @@ body {font: 18px Verdana sans-serif;}
     height: 100%;
     display: inline-block;
     margin-top: 6%;
-    font-size: 40px;
+    font-size: 30px;
+
+    line-height: 40px;
+
     font-family: Arial, sans-serif;
     text-align: center;
 }
@@ -389,7 +441,7 @@ body {font: 18px Verdana sans-serif;}
     margin-top: 0.8%;
     grid-gap: 0.2vw;
 
-    grid-template-columns: 4% 4% 4% 8% 70% 4%;
+    grid-template-columns: 5% 9% 2% 5% 6% 8% 57% 4%;
 
     /*grid-template-columns: 1400px 643px;*/
     grid-template-rows: 50px;
@@ -413,7 +465,6 @@ body {font: 18px Verdana sans-serif;}
     grid-row-start: 1;
     grid-row-end: 3;
 }
-
 
 .grid_top_menu > :nth-child(3) {
     background-color: rgba(204, 204, 255, 0);
@@ -446,6 +497,21 @@ body {font: 18px Verdana sans-serif;}
 }
 
 
+.grid_top_menu > :nth-child(7) {
+    background-color: rgba(204, 204, 255, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid_top_menu > :nth-child(8) {
+    background-color: rgba(204, 204, 255, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
 /*=================================*/
 /*           Timer                 */
 /*=================================*/
@@ -459,8 +525,90 @@ body {font: 18px Verdana sans-serif;}
     width: 100%;
     height: 100%;
     background-color: transparent;
-    font-size: 40px;
+    font-size: 30px;
     border: none;
     font-family: Arial, sans-serif;
     text-align: center;
+}
+
+
+
+
+/*=====================================*/
+/*              LOGO                   */
+/*=====================================*/
+
+
+
+
+
+.logo {
+    display: block;
+    float: left;
+    margin-left: 3%;
+    margin-top: 0.2%;
+}
+.logo span {
+
+
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    /*margin: 5px 0;*/
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+    font-weight: 900;
+}
+.logo span:nth-child(odd) {
+    background: #ef7300;
+}
+.logo span:nth-child(even) {
+    background: #003df8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo2 {
+    display: block;
+    float: left;
+    margin-left: 3%;
+    margin-top: 0.2%;
+}
+.logo2 span {
+
+
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    /*margin: 5px 0;*/
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+    font-weight: 900;
+}
+.logo2 span:nth-child(odd) {
+    background: #ef7300;
+}
+.logo2 span:nth-child(even) {
+    background: #0649f8;
 }
