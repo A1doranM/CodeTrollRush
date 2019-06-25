@@ -1,0 +1,445 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, let,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group::before,
+.group::after {
+    content: "";
+    display: table;
+}
+.group::after {
+    clear: both;
+}
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+/*=================================*/
+/*           User styles           */
+/*=================================*/
+
+body{
+    height: 100vh;
+    /*background-image: url("../assets/web_page_skeleton.png");*/
+    /*background-position:center top;*/
+    /*background-size:cover;*/
+    /*background-repeat: no-repeat;*/
+}
+
+#grid{
+    width: 100%;
+    height: 100%;
+    /*margin-top: 0.5%;*/
+    /*margin-left: 0.30%;*/
+    /*margin-bottom: 0.5%;*/
+    /*margin-right: 0.30%;*/
+}
+
+#tips{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/tips_task.png");
+    background-position:center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#canvas-wrapper{
+    display: block;
+    position: relative;
+    white-space: nowrap;
+}
+
+#game{
+    border: 1px solid black;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    height: 750px;
+}
+
+#code-area{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/consolee.png");
+    background-position:center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#code{
+    width: 92%;
+    margin-top: 17%;
+    margin-left: 4%;
+    height: 83%;
+    font-family: "Book Antiqua", fantasy;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    border-color: Transparent;
+}
+
+#btn-execute{
+    display: inline-block;
+    /*position: relative;*/
+    margin-top: 4%;
+
+    margin-left: 67%;
+    top: -0.3%;
+    width: 27.5%;
+    height: 40px;
+    text-decoration: none;
+    font: 20px "Jokerman", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+
+#label_tips_task{
+    display: block;
+    margin-top: 1.8%;
+    margin-left: 79.6%;
+    width: 18.3%;
+    height: 67%;
+    text-decoration: none;
+    font: 30px "Arial";
+    line-height: 120px;
+    text-align: center;
+    border: 4px solid #989695;
+    background: #d3ecef;
+}
+
+.controls,
+.controls:hover {
+    color: #555;
+    border: 4px solid #989695;
+    background: #39e539;
+}
+
+.controls:hover {
+    background: #32ab22;
+    color: white;
+}
+
+.background {
+    z-index: -1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/*=================================*/
+/*           Tooltips              */
+/*=================================*/
+
+.tooltip {
+    position: fixed;
+    display: inline-block;
+    top: 15%;
+    left: 8%;
+    width: 1100px;
+    height: 600px;
+    /* подсказка должна перекрывать другие элементы */
+
+    padding: 10px 20px;
+    /* красивости... */
+
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    font: italic 16px/1.3 sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+.tooltip strong{
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btnTooltip{
+    padding: 10px 20px;
+    /* красивости... */
+    width: 100px;
+    height: 30px;
+    margin-top: 560px;
+    margin-left: 990px;
+
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+
+    text-decoration: none;
+    font: 20px "Jokerman", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+}
+
+#btn_tooltip_p{
+    margin-left: 830px;
+}
+/*=================================*/
+/*          GRID            */
+/*=================================*/
+
+body {font: 18px Verdana sans-serif;}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    grid-gap: 0.2vw;
+
+    grid-template-columns: 1fr 600px;
+
+    /*grid-template-columns: 1400px 643px;*/
+    grid-template-rows: 85px 750px 183px;
+    /*grid-template-rows: auto [header-bottom  main-top] 1fr [main-bottom];*/
+
+    grid-template-areas: "banner    banner"
+    "container menu";
+}
+
+.grid > :nth-child(1) {
+    background-color: #ffecde;
+
+    background-image: url("../assets/top_menu.png");
+    background-position:center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 1; /* то же, что 1 */
+    grid-column-end: 3; /* то же, что 3 */
+
+    /*grid-row-start: banner-start; !* то же, что 1 *!*/
+    /*grid-row-end: banner-end; !* то же, что 2 *!*/
+}
+
+.grid > :nth-child(2) {
+    background-color: #CFC;
+
+    grid-row-start: 2;  /* то же, что 2 */
+    grid-row-end: 3;  /* то же, что 3 */
+    /* колонка не задана, поэтому берется первая свободная */
+}
+
+.grid > :nth-child(3) {
+    background-color: #CCF;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid > :nth-child(4) {
+    background-color: #cd90ff;
+
+    grid-row-start: 3;  /* то же, что 2 */
+    grid-row-end: 4;  /* то же, что 3 */
+    /* колонка не задана, поэтому берется первая свободная */
+}
+
+.grid > :nth-child(5) {
+    background-color: #ffecde;
+
+    background-image: url("../assets/low_menu.png");
+    background-position:center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+    grid-row-start: 3;  /* то же, что 2 */
+    grid-row-end: 4;  /* то же, что 3 */
+    /* колонка не задана, поэтому берется первая свободная */
+}
+
+/*=================================*/
+/*           TopMenu               */
+/*=================================*/
+
+#crystalCounter{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 6%;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#crystalLabel{
+    background-image: url("../assets/crystal_score.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+#tools_top_menu{
+    background-image: url("../assets/tools_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+#timer_icon{
+    background-image: url("../assets/time_linit.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+.grid_top_menu {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    /*margin-left: 0.5%;*/
+    /*margin-right: 2%;*/
+    margin-top: 0.8%;
+    grid-gap: 0.2vw;
+
+    grid-template-columns: 4% 4% 4% 8% 70% 4%;
+
+    /*grid-template-columns: 1400px 643px;*/
+    grid-template-rows: 50px;
+    /*grid-template-rows: auto [header-bottom  main-top] 1fr [main-bottom];*/
+}
+
+.grid_top_menu > :nth-child(1) {
+    background-color: rgba(238, 238, 238, 0);
+
+
+    margin-left: 20%;
+
+    grid-row-start: 1;  /* то же, что 2 */
+    grid-row-end: 3;  /* то же, что 3 */
+    /* колонка не задана, поэтому берется первая свободная */
+}
+
+.grid_top_menu > :nth-child(2) {
+    background-color: rgba(204, 204, 255, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.grid_top_menu > :nth-child(3) {
+    background-color: rgba(204, 204, 255, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.grid_top_menu > :nth-child(4) {
+    background-color: rgba(204, 204, 255, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.grid_top_menu > :nth-child(5) {
+    background-color: rgba(204, 204, 255, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid_top_menu > :nth-child(6) {
+    background-color: rgba(204, 204, 255, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+/*=================================*/
+/*           Timer                 */
+/*=================================*/
+
+#timerForm{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+#timerInput{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}

@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f983ca4-8880-433b-b2ee-1be1f7d67979" name="Default" comment="">
+    <list default="true" id="7f983ca4-8880-433b-b2ee-1be1f7d67979" name="Default" comment="Update singe game mode added tips and tasks with popup&#10;&#10;DESIGN BEST">
+      <change afterPath="$PROJECT_DIR$/public/assets/16225298-exit-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/16225298-exit-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Morgunchik.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/exit-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/level_backgrounds/2467.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/level_backgrounds/2582.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/level_backgrounds/counter-strike-18348-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/level_backgrounds/map2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/profilepng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/rating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/target.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/test/gameSingle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/test/level_1_test.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/level_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/level_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/gameSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/gameSingle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/level_1_test.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/level_1_test.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="level_PVP.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="level_PVP.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/level_PVP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="170">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -31,17 +41,17 @@
       <file leaf-file-name="level_PVP.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/level_PVP.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="166" selection-start-line="166" selection-end-line="166" selection-end-column="23" />
+            <state relative-caret-position="85">
+              <caret line="170" column="1" lean-forward="true" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameSingle.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gameSingle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/src/gameSingle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="221" column="12" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
+            <state relative-caret-position="78">
+              <caret line="233" column="33" lean-forward="true" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -49,7 +59,7 @@
       <file leaf-file-name="level_1_test.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/level_1_test.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="9622">
               <caret line="566" column="16" selection-start-line="566" selection-start-column="16" selection-end-line="566" selection-end-column="16" />
             </state>
           </provider>
@@ -58,7 +68,7 @@
       <file leaf-file-name="level_1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/level_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="1598">
               <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
             </state>
           </provider>
@@ -179,8 +189,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1161" />
-    <option name="y" value="12" />
+    <option name="x" value="1160" />
+    <option name="y" value="11" />
     <option name="width" value="655" />
     <option name="height" value="465" />
   </component>
@@ -213,6 +223,13 @@
               <item name="DIPLOMAAA" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DIPLOMAAA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DIPLOMAAA" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="level_backgrounds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DIPLOMAAA" type="b2602c69:ProjectViewProjectNode" />
@@ -395,7 +412,8 @@
       <workItem from="1561382139073" duration="352000" />
       <workItem from="1561382532435" duration="33000" />
       <workItem from="1561382590549" duration="105000" />
-      <workItem from="1561382713780" duration="11987000" />
+      <workItem from="1561382713780" duration="13224000" />
+      <workItem from="1561463454169" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="Start version">
       <created>1549973050026</created>
@@ -663,22 +681,28 @@
       <option name="project" value="LOCAL" />
       <updated>1561396697085</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Update singe game mode added tips and tasks with popup&#10;&#10;DESIGN BEST">
+      <created>1561408244175</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1561408244175</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="568141000" />
+    <option name="totallyTimeSpent" value="570963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.27734375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.2376302" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294423" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32872504" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -694,11 +718,11 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.3261339" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32937366" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="3" sideWeight="0.5022831" side_tool="true" weight="0.1845238" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.14947917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -706,12 +730,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3305648" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3271028" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2537797" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32872504" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3271028" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32937366" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -732,7 +756,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Complete L4" />
     <MESSAGE value="L5 in progress" />
     <MESSAGE value="Why player is invisible" />
     <MESSAGE value="L5 in progress, correct player moving." />
@@ -757,7 +780,8 @@
     <MESSAGE value="Update PVP design" />
     <MESSAGE value="Update PVP design. TOP LOW MENU" />
     <MESSAGE value="Update singe game mode added tips and tasks with popup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update singe game mode added tips and tasks with popup" />
+    <MESSAGE value="Update singe game mode added tips and tasks with popup&#10;&#10;DESIGN BEST" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update singe game mode added tips and tasks with popup&#10;&#10;DESIGN BEST" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,26 +957,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/level_PVP.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/level_backgrounds/map.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/level_PVP.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="166" selection-start-line="166" selection-end-line="166" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/level_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="1598">
           <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
         </state>
       </provider>
@@ -962,15 +972,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/level_1_test.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="9622">
           <caret line="566" column="16" selection-start-line="566" selection-start-column="16" selection-end-line="566" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/src/gameSingle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="221" column="12" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
+        <state relative-caret-position="78">
+          <caret line="233" column="33" lean-forward="true" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/level_PVP.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="170" column="1" lean-forward="true" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/level_PVP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
